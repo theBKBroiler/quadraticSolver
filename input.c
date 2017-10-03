@@ -9,7 +9,7 @@
 
 struct Input getInput(int argc, char *argv[])
 {
-	struct Input *input = (Input*)malloc(sizeof(struct Input));
+	struct Input *input = malloc(sizeof(struct Input));
 
 	bool boolA = false; 
 	bool boolB = false; 

@@ -5,6 +5,7 @@ struct Input {
 	double c;
 };
 
+double sqrt(double);
 struct Input getInput(int, char*[]);
 double getDisc(double, double, double);
 double* twoReal(double, double, double);
