@@ -1,12 +1,9 @@
 CC=gcc
 CFLAGS=-std=c99 -Wall -o
 testfile=discriminant
-testmain=discTest
 
 all:
-	$(CC) $(CFLAGS) $(testfile).o $(testmain).c ../../$(testfile).c 
-	make test
+	$(CC) $(CFLAGS) $(testfile).o $(testfile).c 
 test:
-	-./$(testfile).o 2 4 6
-	-./$(testfile).o
+	-./$(testfile).o 2 4 6 -32
 	
