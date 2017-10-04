@@ -1,7 +1,17 @@
-#include <math.h>
-#include "quadhead.h"
+#include <stdio.h>
+#include <getopt.h>
+#include <unistd.h>
+#include <stdbool.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include "../../quadhead.h"
 
-double getDisc(double a, double b, double c)
+int Main(int argc, char * argv[])
 {
-	return b*b - 4 * a*c;
+	assert(argc == 4);
+	double desc = getDisc(atof(argv[1]), atof(argv[2]), atof(argv[3]));
+	assert(det == det);
+
+	return 0;
 }
