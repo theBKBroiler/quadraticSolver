@@ -49,13 +49,13 @@ struct Input getInput(int argc, char *argv[])
 	}
 	if (!boolB)
 	{
-		printf("Please enter a value for a\n");
-		scanf("%lf", &input->a);
+		printf("Please enter a value for b\n");
+		scanf("%lf", &input->b);
 	}
 	if (!boolC)
 	{
-		printf("Please enter a value for a\n");
-		scanf("%lf", &input->a);
+		printf("Please enter a value for c\n");
+		scanf("%lf", &input->c);
 	}
 
 	return *input;
