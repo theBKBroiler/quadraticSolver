@@ -7,7 +7,7 @@ all:
 	$(CC) $(CFLAGS) $(testfile).o $(testmain).c ../../$(testfile).c
 
 test:
-	-./$(testfile).o 
+	-./$(testfile).o
 	-./$(testfile).o -1 0 4
 	-./$(testfile).o 1 0 4
-	-./$(testfile).0 1 3 5
+	-./$(testfile).o 1 3 5

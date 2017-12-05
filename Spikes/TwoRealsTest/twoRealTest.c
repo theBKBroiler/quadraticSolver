@@ -10,9 +10,8 @@
 int main(int argc, char *argv[])
 {
 	assert(argc == 4);
-	double det = getDisc(atof(argv[1]), atof(argv[2]), atof(argv[3]));
-	//will break if NaN
-	assert(det == det);
-	
+	double* reals = twoReal(atof(argv[1]), atof(argv[2]), atof(argv[3]));
+	assert(reals != NULL);
+
 	return 0;
 }
